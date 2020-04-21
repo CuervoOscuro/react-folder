@@ -1,0 +1,60 @@
+/*
+Paleta colores (Mas oscuro a mas claro)
+#222831
+#393e46
+#00adb5
+#eee
+#fff
+*/
+
+body{
+    /*background: #222831;*/
+    background: black;
+}
+h2 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.main-content {
+    display: flex;
+    flex-flow: row nowrap;
+    text-align: center;
+    width: 100%;
+}
+.two-columns {
+    width: 50%;
+}
+.two-columns:last-child {
+    display: flex;
+    align-items: center;
+}
+.content-image,
+.content-image-result {
+    align-items: center;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    margin: 10px auto 0;
+    width: 200px;
+}
+.content-image-result {
+    height: 500px;
+    width: 350px;
+}
+.content-image img,
+.content-image-result img {
+    max-height: 300px;
+    width: 95%;
+}
+.content-image-result img {
+    width: calc(100% - 5px);
+    max-height: 500px;
+}
+#uploadOne,
+#uploadTwo {
+    display: none;
+}
